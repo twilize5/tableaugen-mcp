@@ -1,0 +1,61 @@
+{
+  "name": "tableaugen-mcp",
+  "version": "0.1.0",
+  "description": "Generate production-ready Tableau workbooks (.twb / .twbx) from natural language and a CSV. Official MCP server for TabGen (tableaugen.com).",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "tableau",
+    "tabgen",
+    "tableaugen",
+    "business-intelligence",
+    "bi",
+    "dashboards",
+    "data-visualization",
+    "analytics",
+    "workbook-generator",
+    "twbx",
+    "twb"
+  ],
+  "homepage": "https://tableaugen.com",
+  "bugs": {
+    "url": "https://github.com/twilize5/tableaugen-mcp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twilize5/tableaugen-mcp.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Jico (Suddhasheel Bhattacharya)",
+    "url": "https://tableaugen.com"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "tableaugen-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
