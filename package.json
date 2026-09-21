@@ -1,6 +1,7 @@
 {
   "name": "tableaugen-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "mcpName": "io.github.twilize5/tableaugen-mcp",
   "description": "Generate production-ready Tableau workbooks (.twb / .twbx) from natural language and a CSV. Official MCP server for TabGen (tableaugen.com).",
   "keywords": [
     "mcp",
